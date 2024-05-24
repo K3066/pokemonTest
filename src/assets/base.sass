@@ -1,0 +1,60 @@
+\:root
+  --app-c-white: #ffffff
+  --app-c-white-soft: #f8f8f8
+  --app-c-white-mute: #f2f2f2
+  --app-c-blue: #2b2d42
+  --app-c-blue-soft: #36384c
+  --app-c-blue-mute: #414356
+  --app-c-red: #d80032
+  --app-c-red-soft: #d80032
+  --app-c-red-mute: #da0d3d
+  --app-c-gray: #edf2f4
+  --app-c-divider-light-1: rgba(60, 60, 60, 0.29)
+  --app-c-divider-light-2: rgba(60, 60, 60, 0.12)
+  --app-c-divider-dark-1: rgba(84, 84, 84, 0.65)
+  --app-c-divider-dark-2: rgba(84, 84, 84, 0.48)
+  --app-c-text-light-1: var(--app-c-indigo)
+  --app-c-text-light-2: rgba(60, 60, 60, 0.66)
+  --app-c-text-dark-1: var(--app-c-white)
+  --app-c-text-dark-2: rgba(235, 235, 235, 0.64)
+
+\:root
+  --color-background: var(--app-c-white)
+  --color-background-soft: var(--app-c-white-soft)
+  --color-background-mute: var(--app-c-white-mute)
+  --color-border: var(--app-c-divider-light-2)
+  --color-border-hover: var(--app-c-divider-light-1)
+  --color-heading: var(--app-c-text-light-1)
+  --color-text: var(--app-c-text-light-1)
+  --section-gap: 160px
+
+
+@media (prefers-color-scheme: dark)
+  \:root
+    --color-background: var(--app-c-blue)
+    --color-background-soft: var(--app-c-blue-soft)
+    --color-background-mute: var(--app-c-blue-mute)
+    --color-border: var(--app-c-divider-dark-2)
+    --color-border-hover: var(--app-c-divider-dark-1)
+    --color-heading: var(--app-c-text-dark-1)
+    --color-text: var(--app-c-text-dark-2)
+
+*,
+*::before,
+*::after
+  box-sizing: border-box
+  margin: 0
+  font-weight: normal
+
+body
+  min-height: 100vh
+  padding: 16px
+  color: var(--color-text)
+  background: var(--color-background)
+  transition: color 0.5s, background-color 0.5s
+  line-height: 1.6
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+  font-size: 15px
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
